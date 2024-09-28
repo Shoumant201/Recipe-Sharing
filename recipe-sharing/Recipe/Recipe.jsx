@@ -104,7 +104,7 @@ const Recipe = () => {
           {["All", "Breakfast", "Lunch", "Dinner", "Special"].map((food) => (
             <li 
             key={food} 
-            className={` hover:cursor-pointer ${selectedFood === food ? 'text-[#FF3535]' : ''}`}
+            className={` hover:cursor-pointer ${selectedFood === food ? 'text-[#FF3535] border-b border-[#FF3535] transition-all duration-200' : ''}`}
             onClick={() => setSelectedFood(food)}>
               {food}
             </li>
@@ -112,7 +112,7 @@ const Recipe = () => {
         </ul>
         <div className='w-[250px] h-[35px] border border-[#B9B9B9] flex items-center p-1 gap-1'>
           <div>
-            <IoSearch className='text-[25px]'/>
+            <IoSearch className='text-[25px] text-[gray] transition-all duration-200'/>
           </div>
           <div className='w-full h-full'>
           <input
@@ -157,7 +157,7 @@ const Recipe = () => {
             </ul>
           </div>
         </div>
-        <div className='w-[85%] flex flex-wrap gap-5 justify-center'>
+        <div className='w-[85%] flex flex-wrap flex-grow gap-5 pl-12'>
           {filteredCards.length > 0 ? (
               filteredCards.map(({ id, title, type, description, image }) => (
                 <RecipeCard key={id} title={title} type={type} description={description} image={image} />
