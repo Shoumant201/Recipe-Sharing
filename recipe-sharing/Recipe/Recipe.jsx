@@ -8,7 +8,7 @@ const Recipe = () => {
         Filter
       </div>
       <div className='w-[80%]'>
-      <RecipeCard/>
+        <RecipeCard/>
       </div>
     </div>
   )
