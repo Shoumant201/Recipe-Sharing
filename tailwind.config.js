@@ -11,7 +11,8 @@ export default {
     extend: {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
-        cormorant: ['"Cormorant SC"', 'serif'],
+        cormorant: ['Cormorant SC', 'serif'],
+        inter: ['Inter', 'sans-serif']
       }
     },
   },
